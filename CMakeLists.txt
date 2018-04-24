@@ -9,9 +9,9 @@ enable_language(Rust)
 include(CMakeCargo)
 
 include_directories("include")
-add_subdirectory(src)
+add_subdirectory(test-lib)
 
-add_executable(helloworld src/main.cpp)
+add_executable(helloworld main.cpp)
 target_link_libraries(helloworld test-lib ws2_32 userenv)
 
 
