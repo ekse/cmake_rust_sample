@@ -1,0 +1,1 @@
+# cmake_rust_sample
